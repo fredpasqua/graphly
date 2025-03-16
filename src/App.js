@@ -37,6 +37,7 @@ const App = () => {
 
   return (
     <div className="homepage">
+      <h1>Affiliate Dashboard</h1>
       <div className="totalRentalsSection">
         <div className="barChart">
           <YearlyBarChart data={dataBarChart} />

@@ -5,11 +5,9 @@
   border: 1px red solid;
 } */
 .homepage {
-  max-width: 99vw;
+  max-width: 100vw;
   padding: 0px;
   margin: 0px;
- 
-
 }
 
 .App-logo {
@@ -75,6 +73,7 @@ padding: 15px;
 }
 .barChart {
   display: flex;
+  height: 350px;
   flex-direction: column;
   border: 2px rgb(255, 183, 0) solid;
   border-radius: 15px;

@@ -1,7 +1,7 @@
 /* RotatingBanner.css */
 .rotating-banner {
-    width: 300px;
-    height: 500px;
+    width: 250px;
+    height: 350px;
     overflow: hidden;
     position: relative;
 }
