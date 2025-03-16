@@ -12,7 +12,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  padding: 5px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,6 +33,63 @@
 .App-link {
   color: #61dafb;
 }
+.graphsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 1200px;
+
+}
+.donut {
+  width:250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+justify-content: auto;
+  border: 2px rgb(255, 183, 0) solid;
+  border-radius: 20px; 
+  margin: 10px;
+  padding: 30px;
+
+}
+.barChart {
+  display: flex;
+  flex-direction: column;
+  border: 2px rgb(255, 183, 0) solid;
+    border-radius: 20px;
+  height: 550px;
+  width: 350px;
+
+  margin: 10px;
+  padding: 5px;
+
+  justify-content: center;
+}
+.imageBanner {
+  border: 2px rgb(255, 183, 0) solid;
+    border-radius: 20px;
+    height:550px;
+    width: 350px;
+    justify-self: center;
+    margin: 10px;
+    padding: 5px;
+    
+}
+.totalRentalsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+}
+.title {
+ height: 20%;
+}
+/* .description {
+ margin-top: auto;
+
+ 
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +98,5 @@
   to {
     transform: rotate(360deg);
   }
+
 }
