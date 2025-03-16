@@ -7,6 +7,7 @@ import "./App.css";
 import testimage2 from "./Images/testimage1.jpg";
 import testimage3 from "./Images/testimage2.jpg";
 import testimage4 from "./Images/testimage3.jpg";
+import easyrentlogo from "./Images/erlogo.png";
 const App = () => {
   const data = {
     value: 80, // The part you want to highlight
@@ -33,7 +34,9 @@ const App = () => {
 
   return (
     <div className="homepage">
-      <h1>NEMC Affiliate Dashboard</h1>
+      <section className="pageTitle">
+        <img src={easyrentlogo} alt="easyrentlogo" className="ezlogo"/>
+      </section>
       <div className="totalRentalsSection">
         <div className="barChart">
           <YearlyBarChart data={dataBarChart} />
@@ -42,43 +45,46 @@ const App = () => {
           <RotatingBanner images={images} />
         </div>
       </div>
-      <div className="graphsContainer">
-        <div className="donut">
-          <div className="title">
-            <h2>Rentals YOY</h2>
-          </div>
-          <DonutGraph value={data.value} total={data.total} />
+      <section className="metrics">
+        <h2>Key Metrics</h2>
+        <div className="graphsContainer">
+          <div className="donut">
+            <div className="title">
+              <h2>Rentals YOY</h2>
+            </div>
+            <DonutGraph value={data.value} total={data.total} />
 
-          <p className="description">
-            *This metric helps you track your performance during the rental
-            season and compares last year's total rentals to the current year
-          </p>
-        </div>
-        <div className="donut">
-          <div className="title">
-            {" "}
-            <h2>Rental Retention</h2>
+            <p className="description">
+              *This metric helps you track your performance during the rental
+              season and compares last year's total rentals to the current year
+            </p>
+          </div>
+          <div className="donut">
+            <div className="title">
+              {" "}
+              <h2>Rental Retention</h2>
+            </div>
+
+            <DonutGraph value={data2.value} total={data2.total} />
+            <p className="description">
+              *Users who have continued
+              beyond the first year of rental. This is an important metric for
+              maximizing your monthly commission.
+            </p>
           </div>
 
-          <DonutGraph value={data2.value} total={data2.total} />
-          <p className="description">
-            *Rental Retention is the percent of users who have continued beyond
-            the first year of rental. This is an important metric for maximizing
-            your commission.
-          </p>
-        </div>
-
-        <div className="donut">
-          <div className="title">
-            <h2>Damage Waiver</h2>
+          <div className="donut">
+            <div className="title">
+              <h2>Damage Waiver</h2>
+            </div>
+            <DonutGraph value={data3.value} total={data3.total} />
+            <p className="description">
+              *Percent of all renters that elected to carry Damage Waiver
+              Coverage.
+            </p>
           </div>
-          <DonutGraph value={data3.value} total={data3.total} />
-          <p className="description">
-            *Percent of all renters that elected to carry Damage Waiver
-            Coverage.
-          </p>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

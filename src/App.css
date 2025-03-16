@@ -1,39 +1,39 @@
-
 /* * {
   border: 1px red solid;
 } */
 .homepage {
-  max-width: 100vw;
+
   padding: 0px;
   margin: 0px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pageTitle {
+  margin-right: auto;
+  margin-left: auto;
+ width: 450px;
+ padding: 0px;
 }
+.pageTitle img {
+max-width: 300px;
+} 
+.ezlogo {
+  position: relative;
+  right: -80px;
+  padding-top: 10px;
+}
+
 
 h1 {
   text-align: center;
 }
+
 h2 {
   text-align: center;
   padding: 5px;
 }
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+
 .graphsContainer {
   display: flex;
   flex-direction: row;
@@ -43,27 +43,38 @@ h2 {
   margin-left: auto;
   align-items: center;
   padding: 10px;
+  width: 100vw;
+}
+
+.metrics {
+  background-color: rgb(238, 238, 248);
+  border: 2px rgb(201, 201, 201) solid;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .donut {
-  width:350px;
+  width: 350px;
   height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
-justify-content: auto;
+  justify-content: auto;
   border: 2px rgb(255, 183, 0) solid;
-  border-radius: 15px; 
- margin: 5px;
-padding: 15px;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 15px;
+  background-color: white;
 
-  
+
 
 }
+
 .description {
   font-size: smaller;
   padding: 3px;
 }
+
 .barChart {
   display: flex;
   height: 350px;
@@ -71,13 +82,15 @@ padding: 15px;
   border: 2px rgb(255, 183, 0) solid;
   border-radius: 15px;
   margin: 5px;
-  padding: 10px;
+  padding: 20px;
   justify-content: center;
   align-items: center;
   min-width: 350px;
   flex-basis: 60%;
+  background-color: white;
 
 }
+
 .dateButton {
   width: fit-content;
   padding: 5px;
@@ -89,10 +102,12 @@ padding: 15px;
 .imageBanner {
   border: 2px rgb(255, 183, 0) solid;
   border-radius: 15px;
-    height:350px;
-    flex-basis: 250px;
-    margin: 5px;
-    padding: 10px;
+  height: 350px;
+  flex-basis: 250px;
+  margin: 5px;
+  padding: 20px;
+  background-color: white;
+
 
 }
 
@@ -102,15 +117,19 @@ padding: 15px;
   flex-wrap: wrap;
   justify-content: space-evenly;
   justify-items: center;
-
   padding: 10px;
-  max-width: 95vw;
-    margin-right: auto;
-      margin-left: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(238, 238, 248);
+  border: 2px rgb(201, 201, 201) solid;
+
+  
 }
+
 .title {
- height:20%;
+  height: 20%;
 }
+
 /* .description {
  margin-top: auto;
 
@@ -121,6 +140,7 @@ padding: 15px;
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
