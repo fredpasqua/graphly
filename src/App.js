@@ -35,7 +35,7 @@ const App = () => {
   return (
     <div className="homepage">
       <section className="pageTitle">
-        <img src={easyrentlogo} alt="easyrentlogo" className="ezlogo"/>
+        <img src={easyrentlogo} alt="easyrentlogo" className="ezlogo" />
       </section>
       <div className="totalRentalsSection">
         <div className="barChart">
@@ -67,9 +67,8 @@ const App = () => {
 
             <DonutGraph value={data2.value} total={data2.total} />
             <p className="description">
-              *Users who have continued
-              beyond the first year of rental. This is an important metric for
-              maximizing your monthly commission.
+              *Users who have continued beyond the first year of rental. This is
+              an important metric for maximizing your monthly commission.
             </p>
           </div>
 
