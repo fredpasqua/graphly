@@ -4,9 +4,9 @@ import YearlyBarChart from "./components/yearlyBarChart";
 import RotatingBanner from "./components/rotatingBanner";
 import "./App.css";
 
-import testimage2 from './Images/testimage2.jpg';
-import testimage3 from './Images/testimage3.jpg';
-import testimage4 from  './Images/testimage4.jpg';
+import testimage2 from './Images/testimage1.jpg';
+import testimage3 from './Images/testimage2.jpg';
+import testimage4 from  './Images/testimage3.jpg';
 const App = () => {
   const data = {
     value: 80, // The part you want to highlight
@@ -37,7 +37,14 @@ const App = () => {
 
   return (
     <div className="homepage">
-     
+      <div className="totalRentalsSection">
+        <div className="barChart">
+          <YearlyBarChart data={dataBarChart} />
+        </div>
+        <div className="imageBanner">
+          <RotatingBanner images={images} />
+        </div>
+      </div>
       <div className="graphsContainer">
         <div className="donut">
           <div className="title">
@@ -73,14 +80,6 @@ const App = () => {
             *Percent of all renters that elected to carry Damage Waiver
             Coverage.
           </p>
-        </div>
-      </div>
-      <div className="totalRentalsSection">
-        <div className="barChart">
-          <YearlyBarChart data={dataBarChart} />
-        </div>
-        <div className="imageBanner">
-          <RotatingBanner images={images} />
         </div>
       </div>
     </div>
