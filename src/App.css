@@ -85,11 +85,12 @@ padding: 15px;
   flex-basis: 60%;
 
 }
+
 .imageBanner {
   border: 2px rgb(255, 183, 0) solid;
   border-radius: 15px;
     height:350px;
-    flex-basis: 350px;
+    flex-basis: 250px;
     margin: 5px;
     padding: 10px;
 
