@@ -17,13 +17,10 @@ const App = () => {
       total: 100, // The total amount
     };
       const data3 = {
-        value: 60, // The part you want to highlight
+        value: 87, // The part you want to highlight
         total: 100, // The total amount
       };
-        const data4 = {
-          value: 85, // The part you want to highlight
-          total: 100, // The total amount
-        };
+       
 
         const images = [testimage2, testimage3, testimage4]
 
@@ -40,7 +37,7 @@ const App = () => {
 
   return (
     <div className="homepage">
-      <h1>Welcome to your NEMC Affiliate Dashboard</h1>
+     
       <div className="graphsContainer">
         <div className="donut">
           <div className="title">
