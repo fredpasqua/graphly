@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/graphly/static/css/main.00658219.css",
+    "main.css": "/graphly/static/css/main.afb1a90f.css",
     "main.js": "/graphly/static/js/main.0b55e3d9.js",
     "static/js/453.bd4e50e5.chunk.js": "/graphly/static/js/453.bd4e50e5.chunk.js",
     "static/media/testimage3.jpg": "/graphly/static/media/testimage3.d9786eb40958c2da1ce3.jpg",
@@ -8,12 +8,12 @@
     "static/media/testimage2.jpg": "/graphly/static/media/testimage2.b373683ffb7dcc5fcb5c.jpg",
     "static/media/testimage1.jpg": "/graphly/static/media/testimage1.4e35be7749f2ec9f85eb.jpg",
     "index.html": "/graphly/index.html",
-    "main.00658219.css.map": "/graphly/static/css/main.00658219.css.map",
+    "main.afb1a90f.css.map": "/graphly/static/css/main.afb1a90f.css.map",
     "main.0b55e3d9.js.map": "/graphly/static/js/main.0b55e3d9.js.map",
     "453.bd4e50e5.chunk.js.map": "/graphly/static/js/453.bd4e50e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.00658219.css",
+    "static/css/main.afb1a90f.css",
     "static/js/main.0b55e3d9.js"
   ]
 }
