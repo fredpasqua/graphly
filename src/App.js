@@ -56,7 +56,7 @@ const App = () => {
 
             <p className="description">
               *This metric helps you track your performance during the rental
-              season and compares last year's total rentals to the current year
+              season and compares last year's total rentals to the current year.
             </p>
           </div>
           <div className="donut">
