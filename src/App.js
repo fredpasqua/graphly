@@ -4,40 +4,36 @@ import YearlyBarChart from "./components/yearlyBarChart";
 import RotatingBanner from "./components/rotatingBanner";
 import "./App.css";
 
-import testimage2 from './Images/testimage1.jpg';
-import testimage3 from './Images/testimage2.jpg';
-import testimage4 from  './Images/testimage3.jpg';
+import testimage2 from "./Images/testimage1.jpg";
+import testimage3 from "./Images/testimage2.jpg";
+import testimage4 from "./Images/testimage3.jpg";
 const App = () => {
   const data = {
     value: 80, // The part you want to highlight
     total: 100, // The total amount
   };
-    const data2 = {
-      value: 30, // The part you want to highlight
-      total: 100, // The total amount
-    };
-      const data3 = {
-        value: 87, // The part you want to highlight
-        total: 100, // The total amount
-      };
-       
+  const data2 = {
+    value: 30, // The part you want to highlight
+    total: 100, // The total amount
+  };
+  const data3 = {
+    value: 87, // The part you want to highlight
+    total: 100, // The total amount
+  };
 
-        const images = [testimage2, testimage3, testimage4]
+  const images = [testimage2, testimage3, testimage4];
 
-        const dataBarChart = [ 
-           { year: "2020", total: 150 },
-          { year: "2021", total: 180 },
-          { year: "2022", total: 210 },
-          { year: "2023", total: 250 },
-          { year: "2024", total: 350 }]
-        
-        
-        
-
+  const dataBarChart = [
+    { year: "2020", total: 150 },
+    { year: "2021", total: 180 },
+    { year: "2022", total: 210 },
+    { year: "2023", total: 300 },
+    { year: "2024", total: 450 },
+  ];
 
   return (
     <div className="homepage">
-      <h1>Affiliate Dashboard</h1>
+      <h1>NEMC Affiliate Dashboard</h1>
       <div className="totalRentalsSection">
         <div className="barChart">
           <YearlyBarChart data={dataBarChart} />
@@ -66,9 +62,9 @@ const App = () => {
 
           <DonutGraph value={data2.value} total={data2.total} />
           <p className="description">
-            *Rental Retention is the percent of users who have continued their
-            rental past the first year of rental. This is an important metric
-            for maximizing your commission.
+            *Rental Retention is the percent of users who have continued beyond
+            the first year of rental. This is an important metric for maximizing
+            your commission.
           </p>
         </div>
 
