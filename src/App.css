@@ -85,10 +85,8 @@ h2 {
   padding: 20px;
   justify-content: center;
   align-items: center;
-  min-width: 350px;
-  flex-basis: 60%;
   background-color: white;
-  max-width: 95vw;
+  flex-basis: 60vw;
 
 }
 
